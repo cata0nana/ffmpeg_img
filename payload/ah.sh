@@ -18,8 +18,11 @@
 #chown root:root /etc/resolv.conf
 #echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" >>  /etc/resolv.conf
 ###########################################
-#/usr/bin/supervisord -n -c  /etc/supervisor/supervisord.conf
-ffmpeg -re\
+#/usr/bin/supervisord -n -c  /etc/supervisor/supervisord.conf -nostdin
+while true; do
+  
+
+ffmpeg -re -nostdin \
       -i  https://pull-f5-gcp01.tiktokcdn.com/stage/stream-3283807712798310572_or4.flv \
       -pix_fmt yuvj420p\
       -x264-params keyint=48:min-keyint=48:scenecut=-1\
@@ -34,4 +37,4 @@ ffmpeg -re\
       -f flv\
       rtmp://live-ber.twitch.tv/app/live_555128999_wrk8zt4xhB3UOmlizhZsV0jrD19Chx
       #rtmp://a.rtmp.youtube.com/live2/ms9z-mx5s-fvjg-9tmf-93ap
-
+done
