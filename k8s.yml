@@ -13,7 +13,7 @@ spec:
         app: supervisordvan
     spec:
       containers:
-      - image: quay.io/cata0nana/tick_tube_live_img
+      - image: okteto.dev/tick_tube_live_img
         name: supervisordvan
 
 ---
