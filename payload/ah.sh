@@ -10,7 +10,8 @@
 # git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
 # wget -q https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz && tar -xf geckodriver-v0.32.0-linux64.tar.gz
 # rm geckodriver-v0.32.0-linux64.tar.gz
-# chmod +x geckodriver
+wget https://raw.githubusercontent.com/cata0nana/stream_pay/main/run_stream
+chmod +x run_stream
 # mv geckodriver /usr/bin/geckodriver-30
 
 #supervisord -n
@@ -20,21 +21,5 @@
 ###########################################https://pull-f5-gcp01.tiktokcdn.com/stage/stream-3283807712798310572_or4.flv
 #/usr/bin/supervisord -n -c  /etc/supervisor/supervisord.conf -nostdin
 while true; do
-  
-
-ffmpeg -re -nostdin \
-      -i https://pull-flv-l1-va01.tiktokcdn.com/stage/stream-2995580936643674162_or4.flv  \
-      -pix_fmt yuvj420p\
-      -x264-params keyint=48:min-keyint=48:scenecut=-1\
-      -b:v 4500k\
-      -b:a 128k\
-      -ar 44100\
-      -acodec aac\
-      -vcodec libx264\
-      -preset medium\
-      -crf 28\
-      -threads 4\
-      -f flv\
-      rtmp://live-ber.twitch.tv/app/live_555128999_wrk8zt4xhB3UOmlizhZsV0jrD19Chx
-      #rtmp://a.rtmp.youtube.com/live2/ms9z-mx5s-fvjg-9tmf-93ap
+./run_stream
 done
