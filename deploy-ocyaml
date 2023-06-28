@@ -23,7 +23,7 @@ spec:
         runAsGroup: 1000
       #   fsGroup: 2000
       containers:
-      - image: quay.io/cata0nana/oc_v1_img
+      - image: registry.cloud.okteto.net/cata0nana/ffmpeg_live_img
         name: debian-name
         ports:
         - containerPort: 22
