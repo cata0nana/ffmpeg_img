@@ -1,6 +1,6 @@
-FROM debian:bullseye
+#FROM debian:bullseye
 
-#FROM ubuntu:20.04
+FROM ubuntu:20.04
 #MAINTAINER 0x##Y8H4 Diklic "loc_v1_stage_1"
 
 ###########################################################################
@@ -78,5 +78,5 @@ RUN echo "PLEASE CHANGE THAT AFTER FIRST LOGIN"
 COPY ./payload/ah.sh /usr/bin/
 RUN chmod +x /usr/bin/ah.sh
 #RUN $STARTUPDIR/ah.sh
-CMD ["ah.sh"]
+#CMD ["ah.sh"]
 ENTRYPOINT ["ah.sh"]
