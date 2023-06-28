@@ -13,7 +13,7 @@ spec:
         app: supervisordvan
     spec:
       containers:
-      - image: registry.cloud.okteto.net/cata0nana/tick_tube_live_img
+      - image: registry.cloud.okteto.net/cata0nana/ffmpeg_live_img
         name: supervisordvan
 
 ---
