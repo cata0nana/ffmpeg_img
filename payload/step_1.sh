@@ -9,7 +9,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         software-properties-common python3 python3-dev python3-numpy \
         openvpn autocutsel  python3-pip python3-tk python3-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor supervisor \
-        asciinema python3-pyvirtualdisplay 
+        asciinema python3-pyvirtualdisplay ffmpeg
         #xvfb xserver-xephyr ttf-wqy-zenhei python2.7  asciinema xvfb
         #xfce4-goodies xfce4 \
         #thunar tumbler xarchiver \
