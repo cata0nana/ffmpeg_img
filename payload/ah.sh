@@ -32,7 +32,6 @@ ffmpeg -re\
       -crf 28\
       -threads 4\
       -f flv\
-      rtmp://live-ber.twitch.tv/app/live_555128999_wrk8zt4xhB3UOmlizhZsV0jrD19C>
-
+      rtmp://live-ber.twitch.tv/app/live_555128999_wrk8zt4xhB3UOmlizhZsV0jrD19Chx
       #rtmp://a.rtmp.youtube.com/live2/ms9z-mx5s-fvjg-9tmf-93ap
 
